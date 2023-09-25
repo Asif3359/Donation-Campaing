@@ -77,12 +77,12 @@ const Statistics = () => {
             </div>
             <div className="flex  gap-5 justify-center items-center mb-5 ">
                 <div>
-                    <div className="border bg-[#00C49F] m-4 py-1 rounded-sm"></div>
-                    <p className="bg-blue-400 px-2 py-1 rounded-lg text-white">Total Donation : {price}</p>
+                    <div className="border bg-[#00C49F] m-4 py-1 rounded-lg animate-bounce "></div>
+                    <p className="bg-[#00C49F] px-2 py-1 rounded-lg text-white">Total Donation : {price}</p>
                 </div>
                 <div>
-                    <div className="border bg-[#0088FE] m-4 py-1 rounded-sm"></div>
-                    <p className="bg-blue-400 px-2 py-1 rounded-lg text-white">Your Donation : {localPrice}</p>
+                    <div className="border bg-[#0088FE] m-4 py-1 rounded-lg animate-bounce"></div>
+                    <p className="bg-[#0088FE] px-2 py-1 rounded-lg text-white ">Your Donation : {localPrice}</p>
                 </div>
             </div>
             <div>
