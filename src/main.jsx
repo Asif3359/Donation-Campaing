@@ -10,6 +10,7 @@ import Root from './Root/Root.jsx';
 import Home from './Pagees/Home/Home.jsx';
 import Donation from './Pagees/Donation/Donation.jsx';
 import Statistics from './Pagees/Statistics/Statistics.jsx';
+import DonationDetails from './Pagees/DonationDetails/DonationDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element:<Home></Home>,
-        loader:()=> fetch("./DonationCampaing.json")
+        loader:()=> fetch("/DonationCampaing.json")
       },
       {
         path: "/donation",
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element:<Statistics></Statistics>,
+      },
+      {
+        path: "/donationDetails/:id",
+        element:<DonationDetails></DonationDetails>,
+        loader:()=>fetch("/DonationCampaing.json")
       },
     ],
   },

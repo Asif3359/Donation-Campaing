@@ -51,10 +51,10 @@ const NavBar = () => {
                         </div>
                         <li className='md:hidden'>
                             <details>
-                                <summary>
-                                    Parent
+                                <summary >
+                                   <p className='text-bold'> Menu</p>
                                 </summary>
-                                <ul className="p-2 bg-base-100">
+                                <ul className="p-2 bg-base-100 z-30">
                                     <li><NavLink
                                         to="/"
                                         className={({ isActive, isPending }) =>
