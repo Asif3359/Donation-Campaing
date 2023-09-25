@@ -11,7 +11,7 @@ const NavBar = () => {
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">
                         <div className='hidden md:flex gap-5'>
-                            <li><NavLink
+                            <li className='font-semibold'><NavLink
                                 to="/"
                                 className={({ isActive, isPending }) =>
                                     isActive
@@ -23,7 +23,7 @@ const NavBar = () => {
                             >
                                 Home
                             </NavLink></li>
-                            <li><NavLink
+                            <li className='font-semibold'><NavLink
                                 to="/donation"
                                 className={({ isActive, isPending }) =>
                                     isActive
@@ -35,7 +35,7 @@ const NavBar = () => {
                             >
                                 Donation
                             </NavLink></li>
-                            <li><NavLink
+                            <li className='font-semibold'><NavLink
                                 to="/statistics"
                                 className={({ isActive, isPending }) =>
                                     isActive
@@ -45,16 +45,16 @@ const NavBar = () => {
                                             : ""
                                 }
                             >
-                                Stat
+                                Statistics
                             </NavLink></li>
 
                         </div>
                         <li className='md:hidden'>
                             <details>
                                 <summary >
-                                   <p className='text-bold'> Menu</p>
+                                   <p className='font-bold'>Menu</p>
                                 </summary>
-                                <ul className="p-2 bg-base-100 z-30">
+                                <ul className=" p-2 bg-base-100 z-30">
                                     <li><NavLink
                                         to="/"
                                         className={({ isActive, isPending }) =>

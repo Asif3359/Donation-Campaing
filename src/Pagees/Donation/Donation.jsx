@@ -21,17 +21,20 @@ const Donation = () => {
     };
     return (
         <div className='px-5 mt-7 mb-7'>
-            <button className='btn btn-sm btn-primary my-2' onClick={handleShowAll}>
-                {showAll ? 'Show Less' : 'Show All'} {/* Toggle button text */}
-            </button>
             <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-5'>
                 {showAll ?
-                    donationData.map((donation, index) => <Donated  key={index} donation={donation} ></Donated>)
+                    donationData.map((donation, index) => <Donated key={index} donation={donation} ></Donated>)
                     :
-                    donationData.slice(0, 4).map((donation, index) => <Donated  key={index} donation={donation} ></Donated>)
+                    donationData.slice(0, 4).map((donation, index) => <Donated key={index} donation={donation} ></Donated>)
 
                 }
             </div>
+            <div className='flex justify-center items-start m-5'>
+                <button className='btn btn-sm btn-primary my-2 ' onClick={handleShowAll}>
+                    {showAll ? 'Show Less' : 'Show All'} {/* Toggle button text */}
+                </button>
+            </div>
+
         </div>
     );
 };

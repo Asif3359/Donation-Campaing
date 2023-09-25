@@ -14,10 +14,6 @@ const DonationDetails = () => {
         const suspectDonation = donationDetails.find(dona => dona.id==id);
         setDonation(suspectDonation);
 
-
-        
-
-
     },[id,donationDetails])
 
 
@@ -50,11 +46,11 @@ const DonationDetails = () => {
                 <div className='absolute bottom-0 w-full left-0 py-4 px-2 bg-[#00000047]'>
                     <button onClick={()=>handleDetails()}  style={{
                         backgroundColor:`${donation.text_button_bg_color}`
-                    }} className=' btn text-white'>Details</button>
+                    }} className=' btn text-white'>Donate ${donation.price}</button>
                 </div>
             </div>
             <h1 className='text-2xl md:text-5xl font-semibold mb-2 md:mb-6 mt-4'>{donation.title}</h1>
-            <p className='py-1 mb-4'>{donation.description}</p>
+            <p className='py-1 mb-4' >{donation.description}</p>
         </div>
     );
 };
