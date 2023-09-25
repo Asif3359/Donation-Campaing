@@ -44,7 +44,7 @@ const DonationDetails = () => {
     } 
 
     return (
-        <div className='px-4 mt-10 z-0'>
+        <div className='px-4 mt-4 z-0'>
             <div className='relative'>
                 <img className='w-full h-[20rem] lg:h-[30rem]' src={donation.picture} alt="" />
                 <div className='absolute bottom-0 w-full left-0 py-4 px-2 bg-[#00000047]'>
