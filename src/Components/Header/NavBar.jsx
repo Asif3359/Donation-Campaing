@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
             <div className="navbar bg-base-100  ">
                 <div className="flex-1">
-                    <img src="/public/Logo.png " className='w-48 p-1' alt="" />
+                    <img src="/Logo.png " className='w-48 p-1' alt="" />
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">

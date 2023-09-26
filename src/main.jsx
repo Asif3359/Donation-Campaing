@@ -11,11 +11,13 @@ import Home from './Pagees/Home/Home.jsx';
 import Donation from './Pagees/Donation/Donation.jsx';
 import Statistics from './Pagees/Statistics/Statistics.jsx';
 import DonationDetails from './Pagees/DonationDetails/DonationDetails.jsx';
+import Errorpage from './Pagees/ErrorPage/Errorpage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<Errorpage></Errorpage>,
     children: [
       {
         path: "/",
