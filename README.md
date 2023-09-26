@@ -1,8 +1,12 @@
-# React + Vite
+# Project Feature
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 1 Home 
+- Home has a banner donation category. Forest has a search option in which if you search like category name, the categories will be displayed under the banner.
+Clicking on the user category will open a new page where the details of the clicked category will be displayed.
+Donation will be completed by clicking the Donation Button in Category Details.
 
-Currently, two official plugins are available:
+- 2 Donation
+The user's donated categories will be displayed in the donation page. Where 4 cards will be displayed in deafult condition. And clicking on the Show All button will display all the categories
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 3 statistics
+The statistics page shows a pie chart showing the amount of user donations and the total amount of the campaign.
