@@ -30,9 +30,10 @@ const Donation = () => {
                 }
             </div>
             <div className='flex justify-center items-start m-5'>
-                <button className='btn btn-sm btn-primary my-2 ' onClick={handleShowAll}>
-                    {showAll ? 'Show Less' : 'Show All'} {/* Toggle button text */}
-                </button>
+                
+                    {
+                    showAll ? '' :<button className='btn btn-sm btn-primary my-2 ' onClick={handleShowAll}>Show All</button>
+                    }
             </div>
 
         </div>

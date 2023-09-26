@@ -7,7 +7,7 @@ const Root = () => {
     let location = useLocation();
     // console.log(location);
     useEffect(()=>{
-        console.log(location.pathname);
+
         if(location.pathname === '/')
         {
             document.title="Donation-Home"
